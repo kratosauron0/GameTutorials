@@ -41,6 +41,12 @@ function draw() {
   }
 }
 
+function keyPressed(){
+  if(keyCode == LEFT_ARROW){
+    player.direction = 'left'
+  }
+}
+
 function title() {
   background(8, 163, 150);
   textSize(75);
@@ -62,6 +68,7 @@ function level1() {
   //text('Click for points', w/2, h - 30);
 
 player.display();
+player.move();
 
 coin.display();
 coin.move();
