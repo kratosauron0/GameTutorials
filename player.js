@@ -1,4 +1,5 @@
 class Player {
+
   constructor() {
     this.r = 60;
     this.x = w / 2;
@@ -12,11 +13,10 @@ class Player {
   }
 
   move() {
-
     switch (this.direction) {
       case 'still':
-      //don't move anything
-      break;
+        //don't move anything
+        break;
       case 'up':
         //decrease y pos
         this.y -= this.speed;
@@ -36,7 +36,5 @@ class Player {
       default:
         break;
     }
-
   }
-
 }
